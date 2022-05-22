@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 #define MaxSize 5
 typedef int ElemType;
 typedef struct {//队列
@@ -9,7 +8,7 @@ typedef struct {//队列
 }SqQueue;//队列别名
 
 //初始化队列
-void InitQueue(SqQueue &sq) {//队头队尾相等
+void InitQueue(SqQueue& sq) {//队头队尾相等
 	sq.front = sq.rear = 0;
 }
 //是否为空
@@ -21,11 +20,11 @@ bool isEmpty(SqQueue& sq)
 		return false;
 }
 //入队
-bool EnQueue(SqQueue& sq,ElemType x) {
+bool EnQueue(SqQueue& sq, ElemType x) {
 	if ((sq.rear + 1) % MaxSize == sq.front)// 判断是否
 		return false;
 	sq.data[sq.rear] = x;
-	sq.rear = (sq.rear+1)%MaxSize;//循环队列
+	sq.rear = (sq.rear + 1) % MaxSize;//循环队列
 	return true;
 }
 //出队
@@ -64,4 +63,8 @@ int main() {
 		printf("出队失败\n");
 	}
 	ret = EnQueue(sq, 8);
+
+
+
+
 }

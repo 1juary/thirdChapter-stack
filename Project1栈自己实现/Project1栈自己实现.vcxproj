@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8e2f8c2c-de48-4700-ba81-1125ecaf5070}</ProjectGuid>
-    <RootNamespace>Project1栈与队列自己实现</RootNamespace>
+    <ProjectGuid>{95126aa2-035c-48cc-a140-48420c3eaf79}</ProjectGuid>
+    <RootNamespace>Project1栈自己实现</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="队列.cpp" />
+    <ClCompile Include="栈.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

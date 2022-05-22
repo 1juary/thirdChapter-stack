@@ -9,11 +9,11 @@ typedef struct {
 }SqStack;
 
 //初始化栈
-void InitStack(SqStack &S) {
+void InitStack(SqStack& S) {
 	S.top = -1;//代表栈为空
 }
 //判断栈是否为空
-bool StackEmpty(SqStack& S)
+bool IsStackEmpty(SqStack& S)
 {
 	if (S.top == -1)
 		return true;
@@ -30,11 +30,19 @@ bool Push(SqStack& S, ElemType x) {
 	return true;
 }
 //出栈
-bool Pop(SqStack& S, ElemType &x) {
-	if ( -1 == S.top) {
+bool Pop(SqStack& S, ElemType& x) {
+	if (-1 == S.top) {
 		return false;
 	}
-	x = S.data[--S.top];
+	x = S.data[S.top--];
+	return true;
+}
+//获取栈顶元素
+bool GetTop(SqStack& S, ElemType& x) {
+	if (-1 == S.top) {
+		return false;
+	}
+	x = S.data[S.top];
 	return true;
 }
 int main() {
@@ -42,5 +50,20 @@ int main() {
 	bool flag;
 	ElemType m;//用来存放拿出的元素
 	InitStack(S);//初始化
+	flag = IsStackEmpty(S);
+	Push(S, 0);
+	Push(S, 1);
+	Push(S, 2);
+	Pop(S, m);
+	flag = IsStackEmpty(S);
+	if (flag) {
+		printf("栈为空\n");
+	}
+	else {
+		printf("栈中有%d个元素\n", S.data[S.top]+1);
+		if (m) {
+			printf("出栈元素%d\n", m);
+		}
+	}
 
 }

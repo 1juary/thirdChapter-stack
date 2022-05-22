@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.3.3 斐波那契数列", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1栈与队列自己实现", "Project1栈与队列自己实现\Project1栈与队列自己实现.vcxproj", "{8E2F8C2C-DE48-4700-BA81-1125ECAF5070}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1栈自己实现", "Project1栈自己实现\Project1栈自己实现.vcxproj", "{95126AA2-035C-48CC-A140-48420C3EAF79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -53,6 +55,14 @@ Global
 		{8E2F8C2C-DE48-4700-BA81-1125ECAF5070}.Release|Win32.Build.0 = Release|Win32
 		{8E2F8C2C-DE48-4700-BA81-1125ECAF5070}.Release|x64.ActiveCfg = Release|x64
 		{8E2F8C2C-DE48-4700-BA81-1125ECAF5070}.Release|x64.Build.0 = Release|x64
+		{95126AA2-035C-48CC-A140-48420C3EAF79}.Debug|Win32.ActiveCfg = Debug|Win32
+		{95126AA2-035C-48CC-A140-48420C3EAF79}.Debug|Win32.Build.0 = Debug|Win32
+		{95126AA2-035C-48CC-A140-48420C3EAF79}.Debug|x64.ActiveCfg = Debug|x64
+		{95126AA2-035C-48CC-A140-48420C3EAF79}.Debug|x64.Build.0 = Debug|x64
+		{95126AA2-035C-48CC-A140-48420C3EAF79}.Release|Win32.ActiveCfg = Release|Win32
+		{95126AA2-035C-48CC-A140-48420C3EAF79}.Release|Win32.Build.0 = Release|Win32
+		{95126AA2-035C-48CC-A140-48420C3EAF79}.Release|x64.ActiveCfg = Release|x64
+		{95126AA2-035C-48CC-A140-48420C3EAF79}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
