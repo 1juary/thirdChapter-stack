@@ -27,7 +27,8 @@ bool IsEmpty(LinkQueue Q)
 void EnQueue(LinkQueue &Q,ElemType x)
 {
 	LinkNode *s=(LinkNode *)malloc(sizeof(LinkNode));
-	s->data=x;s->next=NULL;
+	s->data=x;
+	s->next=NULL;
 	Q.rear->next=s;//rear始终指向尾部
 	Q.rear=s;
 }
